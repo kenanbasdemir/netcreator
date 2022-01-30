@@ -1,5 +1,5 @@
 # netcreator
-.net core 3.1 monolith solution creator
+.net 5.0 monolith solution creator
 
 Sample:
 netcreator.bat "solution-name"
