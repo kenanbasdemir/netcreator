@@ -5,7 +5,7 @@ cd %1
 
 REM CORE ##########################
 
-dotnet new classlib -f netcoreapp3.1 -o %1.Core
+dotnet new classlib -f net5.0 -o %1.Core
 cd %1.Core & del Class1.cs
 mkdir Data & mkdir DataAccess & mkdir Utilities
 
@@ -14,7 +14,7 @@ cd ..
 
 REM DATA ##########################
 
-dotnet new classlib -f netcoreapp3.1 -o %1.Data
+dotnet new classlib -f net5.0 -o %1.Data
 cd %1.Data & del Class1.cs
 mkdir Entities & mkdir Dtos & mkdir Utilities
 
@@ -24,7 +24,7 @@ cd ..
 
 REM DATA-ACCESS ####################
 
-dotnet new classlib -f netcoreapp3.1 -o %1.DataAccess
+dotnet new classlib -f net5.0 -o %1.DataAccess
 cd %1.DataAccess & del Class1.cs
 mkdir Abstract & mkdir Concrete
 
@@ -33,7 +33,7 @@ cd ..
 
 REM WEB-API ########################
 
-dotnet new webapi -f netcoreapp3.1 -o %1.WebAPI
+dotnet new webapi -f net5.0 -o %1.WebAPI
 cd %1.WebAPI
 
 dotnet add package MySql.EntityFrameworkCore --version 3.1.10
