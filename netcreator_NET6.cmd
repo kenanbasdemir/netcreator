@@ -1,4 +1,4 @@
- :: netcreator_NET6.bat myProject net6.0
+ :: netcreator_NET6.cmd myProject net6.0
 
 @echo off
 
