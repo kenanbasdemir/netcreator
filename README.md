@@ -1,6 +1,6 @@
 # netcreator
 
-.net 5.0 monolith solution creator
+.net 6.0 monolith solution creator
 
 ## Sample:
 
