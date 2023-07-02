@@ -1,4 +1,4 @@
- :: netcreator_NET6.cmd myProject net7.0
+ :: netcreator_NET.cmd myProject net7.0
 
 @echo off
 

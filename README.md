@@ -26,7 +26,7 @@ You can run it as in the code block below.
 
 ```cmd
 cd netcreator
-netcreator_NET6.cmd <project-name=optional> <dotnet-version=optional>
+netcreator_NET.cmd <project-name=optional> <dotnet-version=optional>
 ```
 
 ## Authors
@@ -41,6 +41,10 @@ Thank you for your support:
 
 * 1.0.0
     * First released commited
+    * See [commit change]() or See [release history]()
+
+* 1.0.1
+    * Default framework upgraded to net7.0
     * See [commit change]() or See [release history]()
 
 ## License
