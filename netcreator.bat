@@ -5,38 +5,38 @@ cd %1
 
 REM CORE ##########################
 
-dotnet new classlib -f net5.0 -o %1.Core
+dotnet new classlib -f net7.0 -o %1.Core
 cd %1.Core & del Class1.cs
 mkdir Data & mkdir DataAccess & mkdir Utilities
 
-dotnet add package MySql.EntityFrameworkCore --version 5.0.10
+dotnet add package MySql.EntityFrameworkCore --version 7.0.2
 cd ..
 
 REM DATA ##########################
 
-dotnet new classlib -f net5.0 -o %1.Data
+dotnet new classlib -f net7.0 -o %1.Data
 cd %1.Data & del Class1.cs
 mkdir Entities & mkdir Dtos & mkdir Utilities
 
-dotnet add package MySql.EntityFrameworkCore --version 5.0.10
-dotnet add package Microsoft.EntityFrameworkCore.Tools --version 5.0.10
+dotnet add package MySql.EntityFrameworkCore --version 7.0.2
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 7.0.2
 cd ..
 
 REM DATA-ACCESS ####################
 
-dotnet new classlib -f net5.0 -o %1.DataAccess
+dotnet new classlib -f net7.0 -o %1.DataAccess
 cd %1.DataAccess & del Class1.cs
 mkdir Abstract & mkdir Concrete
 
-dotnet add package Microsoft.EntityFrameworkCore --version 5.0.10
+dotnet add package Microsoft.EntityFrameworkCore --version 7.0.2
 cd ..
 
 REM WEB-API ########################
 
-dotnet new webapi -f net5.0 -o %1.WebAPI
+dotnet new webapi -f net7.0 -o %1.WebAPI
 cd %1.WebAPI
 
-dotnet add package MySql.EntityFrameworkCore --version 5.0.10
+dotnet add package MySql.EntityFrameworkCore --version 7.0.2
 cd ..
 
 REM REFERENCES #####################

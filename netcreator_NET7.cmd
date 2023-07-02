@@ -1,4 +1,4 @@
- :: netcreator_NET6.cmd myProject net6.0
+ :: netcreator_NET6.cmd myProject net7.0
 
 @echo off
 
@@ -8,7 +8,7 @@ SET framework=%2
  :: -----------------------
 
 IF "%filepath%" == "" set filePath=test
-IF "%framework%" == "" set framework=net6.0
+IF "%framework%" == "" set framework=net7.0
 
 mkdir %filepath%
 cd %filepath%
