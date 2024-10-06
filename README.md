@@ -47,6 +47,10 @@ Thank you for your support:
     * Default framework upgraded to net7.0
     * See [commit change]() or See [release history]()
 
+* 1.0.2
+    * Default framework upgraded to net8.0
+    * See [commit change]() or See [release history]()
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details
